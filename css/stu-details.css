@@ -1,0 +1,173 @@
+*{
+  padding:0px;
+  margin:0px;
+}
+
+body{
+   overflow-x: hidden;
+}
+
+#personal-details{
+	display: block;
+}
+
+.sec1{
+	background-color:#e7eced;
+  height:86.5vh;
+}
+
+header{
+	font-size:20px;
+	background-color:#e7eced;
+	height:40px;
+	color: #25274D;
+	text-align: center;
+	vertical-align: middle;
+	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;	
+}
+#pic-details{
+	padding:15px;
+}
+
+.tablinks{
+	background-color: #464866 ;
+	height:auto;
+	width:100%;
+	cursor: pointer;
+	transition: 0.3s;
+	color:white;
+	text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+
+}
+.responsive {
+  width: 100%;
+  max-width: 180px;
+  padding:20px;
+  display: block;
+  margin:auto;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+  color: white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  /padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/*navbar*******************************************/
+nav{
+	background-color: #25274D;
+	font-family: "Noto Serif SC", serif;
+}
+
+.navbar-brand img {
+	height: 40px;
+	width: auto;
+}
+
+.dropdown button{
+	background-color: #2E9CCA;
+}
+
+.dropdown-item img{
+	height: 40px;
+	width: 40px;	
+}
+
+
+
+.stu-main{
+	margin-top: 65px;
+	margin-bottom: 65px;
+	/height: 70vh;
+	font-family: "Noto Serif SC", serif;
+}
+
+footer{
+	background-color: black;
+	color: white;
+}
+
+/**  Sidebar********************************************************************** */
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #AAABB8;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #29648A;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #2E9CCA;
+  color: white;
+}
+
+.content {
+  margin-top:5px;
+  margin-left:210px;
+  padding: 1px 16px;
+  height:86.5vh;
+}
+
+@media screen and (max-width: 700px) {
+
+  #nav-img{
+    height:35px;
+    width:80px;
+  }
+  .dropdown button{
+    width:80px;
+    height:40px;
+    font-size:0.7em;
+  }
+  .sidebar a {
+    text-align:center;
+    float: none;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top:60px;
+    }
+    .sec1{
+      height:auto;
+      margin-top:-60px;
+    }
+  div.content {margin-left: 0;}
+  .comp-main{
+  margin-top:10px;}
+}

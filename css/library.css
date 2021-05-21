@@ -1,0 +1,156 @@
+.all-books{
+  display:inline-block;
+  height:50px;
+  /*margin-right: -500px;*/
+  margin-top:-5px;
+}
+#whole{
+  overflow-x:auto;
+}
+#myInput {
+  display:inline-block;
+  width:auto;
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; 
+  border: 1px solid #ddd; 
+  margin-top: 75px;
+  margin-left:208px;
+  overflow-x:auto;
+}
+
+#myDIV{
+  display:none;
+}
+#myTable {
+  border-collapse: collapse; /* Collapse borders */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+  margin-top:10px;
+  margin-left:210px;
+  margin-bottom:60px;
+  overflow-x:auto;
+}
+
+#myTable th, #myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+nav{
+  background-color: #25274D;
+  font-family: "Noto Serif SC", serif;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+}
+
+.dropdown button{
+  background-color: #2E9CCA;
+}
+
+.dropdown-item img{
+  height: 40px;
+  width: 40px;  
+}
+
+.footer{
+  background-color: black;
+  color: white;
+}
+
+#scroll-top{
+  display: none;
+}
+
+
+/**  Sidebar********************************************************************** */
+
+.sidebar {
+  margin-top:65px;
+  padding: 0;
+  width: 200px;
+  background-color: #AAABB8;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  cursor:pointer;
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #29648A;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #2E9CCA;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+
+  #nav-img{
+    height:35px;
+    width:80px;
+  }
+  .dropdown button{
+    width:80px;
+    height:40px;
+    font-size:0.7em;
+  }
+  .sidebar a {
+    text-align:center;
+    float: none;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top:60px;
+    }
+    #myInput{
+      position:relative;
+      width:96%;
+      top:-70px;
+      left:-205px
+    }
+    .all-books{
+      position:relative;
+      width:96%;
+      top:-60px;
+      left:5px;
+    }
+    #myTable{
+      position:relative;
+      left:-205px;
+      top:-60px;
+      margin-bottom:-70px;
+    }
+    #whole{
+      margin-bottom:70px;
+    }
+} 

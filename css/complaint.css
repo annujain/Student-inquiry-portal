@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+   overflow-x: hidden;
+}
+
+nav{
+  background-color: #25274D;
+  font-family: "Noto Serif SC", serif;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+}
+
+.dropdown button{
+  background-color: #2E9CCA;
+}
+
+.dropdown-item img{
+  height: 40px;
+  width: 40px;  
+}
+
+.footer{
+  background-color: black;
+  color: white;
+}
+
+#scroll-top{
+  display: none;
+}
+
+
+/**  Sidebar********************************************************************** */
+
+.sidebar {
+  margin-top:65px;
+  padding: 0;
+  width: 200px;
+  background-color: #AAABB8;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  cursor:pointer;
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #29648A;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #2E9CCA;
+  color: white;
+}
+.comp{
+  margin:70px 300px 60px 220px;
+  height:auto;
+  width:72.25em;
+  background-color:#e7eced;
+}
+.comp2{
+  margin-top:-880px;
+  margin-left:1100px;
+}
+@media screen and (max-width: 700px) {
+
+  #nav-img{
+    height:35px;
+    width:80px;
+  }
+  .dropdown button{
+    width:80px;
+    height:40px;
+    font-size:0.7em;
+  }
+  .sidebar a {
+    text-align:center;
+    float: none;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top:60px;
+    }
+  .comp2{
+    margin:-50px 10px 70px 30px;
+    width:auto;  
+    height:auto; 
+  }
+  .comp{
+    margin-left:20px;
+    margin-top:5px;
+  }
+}

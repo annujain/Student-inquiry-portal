@@ -1,0 +1,203 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+   overflow-x: hidden;
+}
+
+nav{
+  background-color: #25274D;
+  font-family: "Noto Serif SC", serif;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+}
+
+.dropdown button{
+  background-color: #2E9CCA;
+}
+
+.dropdown-item img{
+  height: 40px;
+  width: 40px;  
+}
+
+.footer{
+  background-color: black;
+  color: white;
+}
+
+#scroll-top{
+  display: none;
+}
+
+
+/**  Sidebar********************************************************************** */
+
+.sidebar {
+  margin-top:-5px;
+  padding: 0;
+  width: 200px;
+  background-color: #AAABB8;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  cursor:pointer;
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #29648A;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #2E9CCA;
+  color: white;
+}
+
+.event{
+  margin-left:205px;
+  margin-top:70px;
+  background-color: #e7eced;
+  overflow-x:auto;
+  overflow-y:hidden;
+}
+#myDIV{
+  position:relative;
+  top:20px;
+
+}
+
+.round-div{
+  margin-left:80px;
+  margin-bottom:150px;
+  font-size:29px;
+  height:75px;
+  width:75Px;
+  line-height:1.4em;
+  border-radius:50%;
+  text-align:center;
+  background-color: #2e9cca;
+  color:white;
+  font-family: 'Luckiest Guy', cursive;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+  transition: width 2s, height 2s, transform 2s;
+}
+.round-div:hover {
+  -webkit-transform: rotate(180deg); /* Safari */
+  transform: rotate(180deg);
+  margin-left:80px;
+  margin-bottom:150px;
+  font-size:29px;
+  height:75px;
+  width:75Px;
+  line-height:1.4em;
+  border-radius:50%;
+  text-align:center;
+  background-color:#29648a;
+  color:white;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.col-md-2{
+  padding:10px;
+
+}
+.news{
+  position:relative;
+  top:25px;
+}
+.news h3{
+  font-family:"Russo One", sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+
+  #nav-img{
+    height:35px;
+    width:80px;
+  }
+  .dropdown button{
+    width:80px;
+    height:40px;
+    font-size:0.7em;
+  }
+  .sidebar a {
+    text-align:center;
+    float: none;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top:60px;
+    }
+  .event{
+    width:99%;
+    padding:5px;
+    margin-left:2px;
+    margin-right:2px;
+    margin-top:5px;
+    margin-bottom:60px;
+  }
+  .round-div{
+  display: inline-block;
+  margin-left:20px;
+  margin-bottom:5px;
+  font-size:15px;
+  height:45px;
+  width:45Px;
+  line-height:1.6em;
+  border-radius:50%;
+  text-align:center;
+  background-color: #2e9cca;
+  color:white;
+  font-family: 'Luckiest Guy', cursive;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+  transition: width 2s, height 2s, transform 2s;
+}
+.round-div:hover {
+  -webkit-transform: rotate(180deg); /* Safari */
+  transform: rotate(180deg);
+  display: inline-block;
+  margin-left:20px;
+  margin-bottom:5px;
+  font-size:15px;
+  height:45px;
+  width:45Px;
+  line-height:1.6em;
+  border-radius:50%;
+  text-align:center;
+  background-color:#29648a;
+  color:white;
+  font-family: 'Luckiest Guy', cursive;
+}
+.news{
+  position:relative;
+  top:-55px;
+  left:80px;
+}
+.news h3{
+  font-size:19px;
+  word-wrap:normal;
+}
+.news p{
+  position:relative;
+  top:20px;
+  left:-70px;
+  padding:10px;
+  word-wrap:normal;
+}
+
+  }

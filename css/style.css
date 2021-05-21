@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	 overflow-x: hidden;
+	 background-color: white !important;
+	 
+}
+
+nav{
+	background-color: #25274D;
+	font-family: "Noto Serif SC", serif;
+	color:white;
+
+}
+
+.navbar-brand img {
+	height: 40px;
+	width: auto;
+}
+
+.dropdown button{
+	background-color: #2E9CCA;
+}
+
+.dropdown-item img{
+	height: 40px;
+	width: 40px;	
+}
+
+.home-main {
+	text-align: center;
+	margin-top: 65px;
+	margin-bottom: 15px;
+	background-image: url(mnit.jpg);
+}
+
+.layout{
+	display: inline-block;
+	width: 60%;
+	margin-bottom: 65px;
+	font-family: "Noto Serif SC", serif;
+}
+
+
+.layout button{
+	margin-top: 10vh;
+	width: 200px;
+	height: 60px;
+	background-color: #464866;
+	
+	transition: all .2s ease-in-out;
+	text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+
+}
+
+.layout button a{
+	color: white;
+}
+
+.layout button:hover{
+	transform: scale(1.1);
+}
+
+.carousel {
+	display: inline-block;
+	width: 300px;
+	border: 2px solid black;
+	margin-top: 50px;
+	font-family: "Noto Serif SC", serif;
+	background-color: #29648A;
+	color: white;
+	padding: 0px !important;
+}
+
+.carousel-header {
+	padding: 10px;
+	border-bottom: 2px solid black;
+	background-color: #2E9CCA;
+	color: #25274D;
+	text-align: center;
+	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;	
+}
+
+.carousel-inner {
+	padding: 20px;
+	height: 50vh;
+}
+
+.footer{
+	background-color: black;
+	color: white;
+}
+
+#scroll-top{
+	display: none;
+}

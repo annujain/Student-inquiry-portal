@@ -1,0 +1,172 @@
+/*
+#AAABB8
+#464866  light blue
+#25274D  dark blue
+#2E9CCA  light green
+#29648A
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  background-color: #25274D;
+  font-family: "Noto Serif SC", serif;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+}
+
+.dropdown button{
+  background-color: #2E9CCA;
+}
+
+.dropdown-item img{
+  height: 40px;
+  width: 40px;  
+}
+
+*/
+header{
+  font-size:20px;
+  background-color:#e7eced;
+  height:40px;
+  width:auto;
+  color: #25274D;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;  
+}
+.search-box{
+  position:relative;
+  top:70px;
+  left:220px;
+  background-color:#e7eced;
+}
+
+.avail-lt{
+  position:relative;
+  top:70px;
+  left:225px;
+}
+
+.lt-grp{
+  display:flex;
+  flex-wrap:nowrap; 
+}
+.lt{
+  background-color: #464866;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  color:white;
+  text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+
+}
+.lt:hover {
+  background-color:#cccccc;
+}
+.footer{
+  background-color: black;
+  color: white;
+}
+
+#scroll-top{
+  display: none;
+}
+
+
+/**  Sidebar********************************************************************** */
+
+.sidebar {
+  margin-top:65px;
+  padding: 0;
+  width: 200px;
+  background-color: #AAABB8;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  cursor:pointer;
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #29648A;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #2E9CCA;
+  color: white;
+}
+.content {
+  margin-top:5px;
+  margin-left:210px;
+  padding: 1px 16px;
+  height:86.5vh;
+}
+@media screen and (max-width: 700px) {
+
+  #nav-img{
+    height:35px;
+    width:80px;
+  }
+  .dropdown button{
+    width:80px;
+    height:40px;
+    font-size:0.7em;
+  }
+  .sidebar a {
+    text-align:center;
+    float: none;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top:60px;
+    }
+    .search-box{
+      margin-top:-65px;
+      margin-left:-200px;
+      width:auto; 
+    }
+    .avail-lt{
+      position: relative;
+      left:20px;
+      top:75px;
+      margin-bottom:135px;
+
+    }
+    .lt-grp{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content: flex-start;
+    }
+    .lt{
+      height:50px;
+      width:50px;
+      font-size:15px;
+      margin:2px;
+    }
+    .tabcontent .active{
+      position:relative;
+      top:200px;
+      display:none;
+      background-color: red;
+    }
+}
