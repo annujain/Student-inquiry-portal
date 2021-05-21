@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="theme-color" content="#000000" />
+      <title>Complaint Registration</title>
+
+     <!-- <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">-->
+      <link rel="stylesheet" type="text/css" href="css/complaint.css">
+      <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Permanent+Marker" rel="stylesheet">   
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+      <script src="js/index.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <!--navbar----------------------------------------------------------------------------------------------------->
+    <nav class="navbar navbar-reverse fixed-top">
+          <a class="navbar-brand" href="https://www.mnit.ac.in">
+            <img src="images/Mnit_logo.png" alt="mnit-logo" id="nav-img">
+          </a>
+          
+            <div class ="dropdown ml-auto">
+              
+              <button class="btn btn-lg btn-outline-light dropdown-toggle" data-toggle="dropdown" id="navbarDropdown">
+              Hi, User
+              </button>
+            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <li class="img1"><a class="dropdown-item" href="#"><img src="images/user.png"></a></li>
+              <li><a class="dropdown-item" href="index.html">Home</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+              <li><a class="dropdown-item" href="change-pswd.html">Change Password</a></li>
+
+              
+            </ul>
+            </div>
+      </nav>
+
+    <div class="sidebar">
+      <a href="stu-details.html" class="btn">Student Details</a>
+      <a href="#" class="btn active">Complaint Registration</a>
+      <a href="lt-booking.html" class="btn">VLTC Room Booking </a>
+      <a href="library.html" class="btn">Library Book Issue</a>
+      <a href="courses.html" class="btn">Registered Courses</a>
+      <a href="event.html" class="btn">Upcoming Events</a>
+    </div>
+ 
+    <!--Main-------------------------------------------------------------------------------------------------------->
+    <div class="row">
+        <div class="comp">
+            <form action="/action_page.php">
+              <table class="table table-sm table-responsive table-borderless w-auto">
+                <tr>
+                  <td width="50%">
+                    <div class="form-group">
+                      <label for="date">Complaint Date:</label>
+                      <input type="date" class="form-control" id="theDate">
+                  </div>
+                  </td>
+                  <td width="50%">
+                    <div class="form-group">
+                      <label for="name">Name of Complainer:</label>
+                      <input type="text" class="form-control" id="name">
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-group">
+                      <label for="dept"> Department:</label>
+                      <select class="form-control">
+                       <option value="DoAA">Dean of Academic Affairs</option>
+                       <option value="DoRC">Dean of Research and Consultancy</option>
+                       <option value="registrar">Registrar</option>
+                       <option value="chief-warden">Chief Warden</option>
+                       <option value="finance">Finance</option>
+                       <option value="maintainance">Maintainance</option>
+                      </select>
+                  </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <label for="compno"> Complaint number: </label>
+                      <input type="text" class="form-control" name="compno">
+                    </div> 
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-group">
+                      <label for="dept"> Complaint To:</label>
+                      <select class="form-control">
+                       <option value="rpg">R P Gorthi</option>
+                       <option value="gds">G D Sharma</option>
+                       <option value="regstr">Registrar</option>
+                       <option value="cw">Chief Warden</option>
+                       <option value="finance-office">Finance Office</option>
+                       <option value="pamm">Project and Maintainance Manager</option>
+                      </select>
+                  </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <label for="name">Complaint Type:</label>
+                      <input type="text" class="form-control">
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="comp-desc">Complaint Details: </label>
+                    <textarea rows="3" cols="40" name="comment" form="usrform" class="form-control">Enter text here...</textarea>
+                  </td>
+                </tr>
+              </table>
+              <table class="table table-sm table-responsive table-borderless w-auto">
+                <tr>
+                  <td width="40%">
+                    <div class="form-group">
+                      <label for="loc"> Location:</label>
+                      <select class="form-control">
+                       <option value="bh1">Hostel 1</option>
+                       <option value="bh2">Hostel 2</option>
+                       <option value="bh3">Hostel 3</option>
+                       <option value="gh">Gargi Hostel</option>
+                       <option value="fac-quaters">Faculty/Staff Quarters</option>
+                       <option value="Guest">Guest House</option>
+                       <option value="acads">Academic Block</option>
+                       <option value="lt">VLTC Hall </option>
+                       <option value="main1">Main gate </option>
+                       <option value="main2">Back gate</option>
+                       <option value="mess-a">Ganga Hostel</option>
+                       <option value="mess-b">Lohit</option>
+                       <option value="sac">Sports Complex Area</option>
+                       <option value="med-unit">Dispensary</option>
+                      </select>
+                  </div>
+                  </td>
+                  <td width="30%">
+                    <div class="form-group">
+                      <label for="floor">Room no.: </label>
+                      <input type="text" class="form-control" name="room">
+                    </div> 
+                  </td>
+                  <td width="30%">
+                    <div class="form-group">
+                      <label for="contactno"> Contact no.: </label>
+                      <input type="text" class="form-control" name="compno">
+                    </div> 
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>Preferable date and time for visit:</b></td>
+                </tr>
+                <tr>
+                  <td width="40%">
+                    <div class="form-group">
+                      <label for="pdate">Date:</label>
+                      <input type="date" class="form-control" id="pdate">
+                  </div>
+                  </td>
+                  <td width="30%">
+                    <div class="form-row">
+                          <div class="form-group col-6">
+                            <label>From: </label>
+                            <input type="time"  class="form-control"/>
+                          </div>
+                        <div class="form-group col-6">
+                            <label>To: </label>
+                              <input type="time"  class="form-control"/>              
+                          </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-group">
+                      <label>OTP:</label>
+                      <input type="password" name="otp" class="form-control" required>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>                        
+                    <button type="button" class="btn btn-secondary">Generate OTP</button>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="reset" class="btn btn-danger">Reset</button>
+                  </td>
+                </tr>
+              </table>
+          </form> 
+        </div>
+        <div class="comp2">
+          <h3>Student Details:</h3><hr>
+          <form>
+            <label for="rollno">Roll no.:</label>
+            <input type="text" name="rollno" value="2018UMT562"  class="form-control"><br>
+            <label>Mobile number:</label>
+            <input type="text" name="mob" class="form-control" value="1234512345" ><br>
+            <label>Email ID:</label>
+            <input type="email" value="abc@gmail.com"  class="form-control"><br>
+            <label>Hostel:</label>
+            <input type="text" class ="form-control" value="Gargi Hostel" >
+          </form>
+        </div>
+      </div>
+
+    <!-- footer ---------------------------------------------------------------------------------------------------->
+    <footer class="footer navbar fixed-bottom">
+      <span class="navbar-brand">&copy Copyright 2020</span>
+      <button id="scroll-top" onclick="toTop()" class="btn  btn-outline-light"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+    </footer>
+  </body>
+</html> 

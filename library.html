@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="theme-color" content="#000000" />
+      <title>Library Book Issue</title>
+
+      <!--<link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">-->
+      <link rel="stylesheet" type="text/css" href="css/library.css">
+      <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Permanent+Marker" rel="stylesheet">   
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+      <script src="js/index.js"></script>
+      <script src="js/library.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <!--navbar----------------------------------------------------------------------------------------------------->
+    <nav class="navbar navbar-reverse fixed-top">
+          <a class="navbar-brand" href="https://www.mnit.ac.in">
+            <img src="images/Mnit_logo.png" alt="mnit-logo" id="nav-img">
+          </a>
+          
+            <div class ="dropdown ml-auto">
+              
+              <button class="btn btn-lg btn-outline-light dropdown-toggle" data-toggle="dropdown" id="navbarDropdown">
+              Hi, User
+              </button>
+             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <li class="img1"><a class="dropdown-item" href="#"><img src="images/user.png"></a></li>
+              <li><a class="dropdown-item" href="index.html">Home</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+              <li><a class="dropdown-item" href="change-pswd.html">Change Password</a></li>
+
+              
+            </ul>
+            </div>
+      </nav>
+
+    <div class="sidebar">
+      <a href="stu-details.html" class="btn">Student Details</a>
+      <a href="complaint.html" class="btn">Complaint Registration</a>
+      <a href="lt-booking.html" class="btn">VLTC Room Booking </a>
+      <a href="#" class="btn active">Library Book Issue</a>
+      <a href="courses.html" class="btn">Registered Courses</a>
+      <a href="event.html" class="btn">Upcoming Events</a>
+    </div>
+    
+    <!--MAIN-------------------------------------------------------------------------------------------------------> 
+ 
+    <div id="whole">
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Book Title">
+      <button class="btn btn-primary all-books" onclick="myFunction2()">Search All Books</button>
+    
+      <div id="myDIV">
+      <table id="myTable">
+        <tr class="header">
+          <th style="width:20%;">Book number</th>
+          <th style="width:30%;">Title</th>
+          <th style="width:20%;">Author</th>
+          <th style="width:20%;">Available Copies</th>
+          <th style="width:10%;">Book</th>
+        </tr>
+        <tr>
+          <td>12040</td>
+          <td>Introduction to Operating Systems</td>
+          <td>Peter Baer Galvin</td>
+          <td>15</td>
+          <td><button type="submit" class="btn btn-success">Book</button></td>
+        </tr>
+        <tr>
+          <td>11051</td>
+          <td>Introduction to Algorithms</td>
+          <td>Thomas H. Cormen</td>
+          <td>8</td>
+          <td><button type="submit" class="btn btn-success">Book</button></td>
+        </tr>
+        <tr>
+          <td>15620</td>
+          <td>Computer Graphics</td>
+          <td>Donald Hearn</td>
+          <td>10</td>
+          <td><button type="submit" class="btn btn-success">Book</button></td>
+        </tr>
+        <tr>
+          <td>10981</td>
+          <td>Data communications and networking</td>
+          <td>Behrouz A. Forouzan</td>
+          <td>3</td>
+          <td><button type="submit" class="btn btn-success">Book</button></td>
+        </tr>
+        <tr>
+          <td>13800</td>
+          <td>Theory of Computation</td>
+          <td>Michael Sipser</td>
+          <td>9</td>
+          <td><button type="submit" class="btn btn-success">Book</button></td>
+        </tr>
+        <tr>
+          <td>14603</td>
+          <td>Structured Computer Organisation</td>
+          <td>Andrew S. Tanenbaum</td>
+          <td>8</td>
+          <td><button type="submit" class="btn btn-success">Book</button></td>
+        </tr>
+        <tr>
+          <td>19620</td>
+          <td>Java The Complete Reference</td>
+          <td>Herbert Schildt</td>
+          <td>NONE</td>
+          <td><button type="submit" class="btn btn-success" disabled>Book</button></td>
+        </tr>
+        <tr>
+          <td>22930</td>
+          <td>Data Structures Using C</td>
+          <td>Reema Thareja</td>
+          <td>1</td>
+          <td><button type="submit" class="btn btn-success">Book</button></td>
+        </tr>
+      </table> 
+    </div>
+  </div>
+       <!-- footer ---------------------------------------------------------------------------------------------------->
+      <footer class="footer navbar fixed-bottom">
+        <span class="navbar-brand">&copy Copyright 2020</span>
+        <button id="scroll-top" onclick="toTop()" class="btn  btn-outline-light"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+      </footer>
+
+  </body>
+</html>

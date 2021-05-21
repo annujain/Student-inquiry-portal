@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<meta name="theme-color" content="#000000" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Permanent+Marker" rel="stylesheet"> 
+		<!--<link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">-->
+		<link rel="stylesheet" type="text/css" href="css/stu-details.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script  src= "js/stu-details.js"type="text/javascript"></script>
+		<script  src= "js/index.js"type="text/javascript"></script>
+		<title>Student-Details</title>
+
+	</head>
+
+
+	<body>
+		<!--navbar----------------------------------------------------------------------->
+		<nav class="navbar navbar-reverse fixed-top">
+	        <a class="navbar-brand" href="https://www.mnit.ac.in">
+	          <img src="images/Mnit_logo.png" alt="mnit-logo" id="nav-img">
+	        </a>
+	        
+	          <div class ="dropdown ml-auto">
+	            
+	            <button class="btn btn-lg btn-outline-light dropdown-toggle" data-toggle="dropdown" id="navbarDropdown">
+	            Hi, User
+	            </button>
+		        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+		          <li class="img1"><a class="dropdown-item" href="#"><img src="images/user.png"></a></li>
+		          <li><a class="dropdown-item" href="index.html">Home</a></li>
+		          <li><a class="dropdown-item" href="#">Logout</a></li>
+		          <li><a class="dropdown-item" href="change-pswd.html">Change Password</a></li>
+
+		          
+		        </ul>
+	          </div>
+    	</nav>
+
+
+<div class="sidebar">
+  <a href="#" class="btn active">Student Details</a>
+  <a href="complaint.html" class="btn">Complaint Registration</a>
+  <a href="lt-booking.html" class="btn">VLTC Room Booking </a>
+  <a href="library.html" class="btn">Library Book Issue</a> 
+  <a href="courses.html" class="btn">Registered Courses</a>
+  <a href="event.html" class="btn">Upcoming Events</a> 
+</div>
+    	<!----------------main-----------------------------> 
+			<div class="stu-main form-row">
+			<div class="col-md-9 content" id="div1">				
+					<!--Section 1-->
+					<div class="form-row">
+					<div class="sec1 form-group col-md-3">
+							<!--title-->
+							<header>Welcome Annu!</header>
+							<!--photo-->
+							<img src="images/user.png" alt="profile image" class="responsive">
+							<!--details-->
+							<div id="pic-details">
+								<b>Year:</b><br>2nd <br>
+								<b>Roll Number:</b><br> 2018UMT1562 <br>
+								<b>Branch:</b><br> CSE <br>
+							</div>
+					</div>
+
+
+					<!--Section 2-->
+					<div class="col-md-9 sec2 form-group" id="div2">
+							<!--buttons-->
+							<div >
+								<ul class="nav nav-tabs tab">
+									<div class="btn-group">
+										<li><button class="btn btn-md tablinks active" onclick="openTab(event, 'personal-details')">Personal Details
+										</button></li>
+										<li><button type="button" class="btn btn-md tablinks" onclick="openTab(event, 'address-details')">Address Details</button></li>
+										<li><button type="button" class="btn btn-md tablinks" onclick="openTab(event, 'admission-details')">Admission Details</button></li>
+									</div>
+								</ul>
+							</div>
+							<!--AllDetails-->
+							<div id="personal-details" class="tabcontent active" >
+								<form action="/action_page.php">
+									<table class="form-box table table-sm table-responsive table-borderless w-auto">
+										<tr>
+											<div class="form-group">
+												<td width="20%">
+													<label for="name">Student Name: </label>
+												</td>
+												<td width="28%">
+													<input type="text" name="sname" value="Annu Jain"  class="form-controls">
+												</td>
+												<td width="16%">
+													<label for="sel1">Blood group:</label>
+												 </td>
+												<td width="16%">
+													<select class="form-controls">
+													    <option value="A+" selected>A+</option>
+													    <option value="A-" >A-</option>
+													    <option value="B+" >B+</option>
+													    <option value="B-" >B-</option>
+													    <option value="O+"  >O+</option>
+													    <option value="O-" >O-</option>
+													    <option value="AB+" >AB+</option>
+													    <option value="AB-" >AB-</option>
+				  									</select>
+				  								</td>
+		  									</div>
+										</tr>
+										<tr>
+											<div class="form-group">
+												<td><label for="father-name">Father's Name: </label></td>
+												<td><input type="text" name="fname" value="Kamlesh Kumar Jain" readonly="readonly" class="form-controls"></td>
+												<td><label>Nationality:</label></td>
+												<td>
+													<select class="form-controls">
+													    <option value="australia" >Australian</option>
+													    <option value="nepal" >Nepali</option>
+													    <option value="usa" >American</option>
+													    <option value="INDIA" selected>INDIAN</option>
+													    <option value="pakistan" >Pakistani</option>
+													    <option value="sri-lanka" >Sri-Lankan</option>
+													    <option value="bangladesh" >Bangladeshi</option>
+													    <option value="japan" >Japanese</option>
+				  									</select>
+				  								</td>
+											</div>
+										</tr>
+										<tr>
+											<div class="form-group">
+												<td><label for="mother-name">Mother's Name: </label></td>
+												<td><input type="text" name="mname" value="Manju Jain"  class="form-controls"></td>
+											</div>
+										</tr>
+										<tr>
+											<div class="form-group">
+												<td><label for="dob">Date of Birth: </label></td>
+												<td><input type="text" name="dob" value="04/07/2001"  class="form-controls"></td>
+											</div>
+										</tr>
+										<tr>
+											<div class="form-group">
+												<td><label for="Email">Email Id: </label></td>
+												<td><input type="Email" name="email" value="annu18kota@gmail.com"  class="form-controls"></td>
+											</div>
+										</tr>
+										<tr>
+											<div class="form-group">
+												<td><label for="phno">Student Mobile Number: </label></td>
+												<td><input type="text" name="mob" value="1234567890"  class="form-controls"></td>
+											</div>
+										</tr>
+										<tr>
+											<div class="form-group">
+												<td><label for="father-phno">Father Mobile Number: </label></td>
+												<td><input type="text" name="fmob" value="1234567890"  class="form-controls"></td>
+											</div>
+										</tr>
+										<tr>
+											<div class="form-group">
+												<td><label for="mother-phno">Mother Mobile Number: </label></td>
+												<td><input type="text" name="mmob" value="1234566779"  class="form-controls"></td>
+											</div>
+										</tr>
+										<tr>
+											<div class="form-group">
+												  <td>Gender:</td>
+												  <td>
+												  	<label class="radio-inline "><input type="radio" name="Gender" > Male</label>
+												  	<label class="radio-inline"><input type="radio" name="Gender" checked="yes"> Female</label>
+												  	<label class="radio-inline"><input type="radio" name="Gender"> Other</label>
+												  </td>
+											</div>
+										</tr>
+										<tr>
+											<div class="form-group">
+												<td>Marital Status:</td>
+												<td>
+													<label class="radio-inline"><input type="radio" name="status" checked="yes" > Single</label>
+													<label class="radio-inline"><input type="radio" name="status" >   Married</label>
+												</td>
+											</div>
+										</tr>
+									</table>
+								</form> 
+							</div>
+
+							<!--address details-->
+							<div id="address-details" class="tabcontent">
+								<form action="/action_page.php">
+									<table class="form-box table table-sm table-responsive table-borderless w-auto">
+										<tr>
+											<div class="form-group">
+												<td width="15%">
+													<label for="add"><b>Correspondence address:  </b></label>
+												</td>
+												<td colspan="3">
+													<input name="caddress" type="text" value=" 204, SKYRISE APARTMENTS, RINGROAD, KOTA."  style="width:75%;">
+												</td>
+		  									</div>
+										</tr>
+										<tr>
+											<div class="form-group"> 
+												<td><label for="district">District:</label></td>
+												<td>
+													<input type="text" name="dname" value=" KOTA"  class="form-controls">
+				  								</td>
+				  								<td><label for="pin">PIN: </label></td>
+				  								<td>
+				  									<input type="text" name="pin" value=" 300000"  class="form-controls" style="width:%;82">
+				  								</td>
+											</div>
+										</tr>
+										<tr>
+											<div class="form-group"> 
+												<td><label for="city">City:</label></td>
+												<td>
+													<input type="text" name="cname" value=" KOTA"  class="form-controls">
+				  								</td>
+				  								<td><label for="state">State: </label></td>
+				  								<td>
+				  									<select class="form-controls">
+													    <option value="andhra-pradesh" >Andhra Pradesh</option>
+													    <option value="Maharashtra" >Maharashtra</option>
+													    <option value="Rajastan" selected>Rajastan</option>
+													    <option value="Gujarat" >GUJARAT</option>
+													    <option value="Madhya-pradesh"  >Madhya Pradesh</option>
+													    <option value="Punjab" >Punjab</option>
+													    <option value="West-bengal" >West Bengal</option>
+													    <option value="haryana" >Haryana</option>
+				  									</select>
+				  								</td>
+											</div>
+										</tr>
+										<tr>
+											<div class="form-group">
+												<td><label for="landline">Landline number: </label></td>
+												<td><input type="text" name="landline" value=" 0111-111111"  class="form-controls"></td>
+											</div>
+										</tr>
+										<tr>
+											<div class="form-group">
+												<td><label for="Email">Email Id: </label></td>
+												<td><input type="Email" name="email" value=" abcxyz@yahoo.com"  class="form-controls"></td>
+											</div>
+										</tr>
+										<tr>
+											<div class="form-group">
+												<td><label for="add2"><b>Permanent Address: </b></label></td>
+												<td colspan="3">
+													<input name="caddress" type="text" value=" 204, SKYRISE APARTMENTS, RINGROAD, KOTA."  style="width:75%;">
+												</td>
+											</div>
+										</tr>
+										<tr>
+											<div class="form-group"> 
+												<td><label for="pdistrict">District:</label></td>
+												<td>
+													<input type="text" name="dname" value=" KOTA"  class="form-controls">
+				  								</td>
+				  								<td><label for="ppin">PIN: </label></td>
+				  								<td>
+				  									<input type="text" name="pin" value=" 300000"  class="form-controls" style="width:82%;">
+				  								</td>
+											</div>
+										</tr>
+										<tr>
+											<div class="form-group"> 
+												<td><label for="pcity">City:</label></td>
+												<td>
+													<input type="text" name="cname" value=" KOTA"  class="form-controls">
+				  								</td>
+				  								<td><label for="pstate">State: </label></td>
+				  								<td>
+				  									<select class="form-controls">
+													    <option value="andhra-pradesh" >Andhra Pradesh</option>
+													    <option value="Maharashtra" >Maharashtra</option>
+													    <option value="Rajastan" selected>Rajastan</option>
+													    <option value="Gujarat" >GUJARAT</option>
+													    <option value="Madhya-pradesh"  >Madhya Pradesh</option>
+													    <option value="Punjab" >Punjab</option>
+													    <option value="West-bengal" >West Bengal</option>
+													    <option value="haryana" >Haryana</option>
+				  									</select>
+				  								</td>
+											</div>
+										</tr>
+										<tr>
+											<div class="form-group">
+												<td><label for="landline">Landline number: </label></td>
+												<td><input type="text" name="landline" value=" 0111-111111"  class="form-controls"></td>
+											</div>
+										</tr>
+										<tr>
+											<div class="form-group">
+												<td><label for="Email">Email Id: </label></td>
+												<td><input type="Email" name="email" value=" abcxyz@yahoo.com"  class="form-controls"></td>
+											</div>
+										</tr>		
+									</table>
+								</form> 
+							</div>
+							<!--admission-details-->
+							<div id="admission-details" class="tabcontent">
+								<form action="/action_page.php">
+									<table class="form-box table table-sm table-responsive table-borderless w-auto">
+										<tr>
+											<div class="form-group">
+												<td width="20%">
+													<label for="name">Date of Admission: </label>
+												</td>
+												<td width="28%">
+													<input type="text" name="ad-date" value="27/10/2020"  class="form-controls">
+												</td>
+												<td width="16%">
+													<label for="deg">Degree :</label>
+												 </td>
+												<td width="16%">
+													<select class="form-controls">
+													    <option value="btech" selected>B.Tech</option>		    
+													    <option value="m.sc." >M.Sc.</option>
+													    <option value="mtech" >M.Tech</option>
+													    <option value="phd">Ph.D</option>
+				  									</select>
+				  								</td>
+		  									</div>
+										</tr>
+										<tr>
+											<div class="form-group">
+												<td><label for="payment">Payment Type: </label></td>
+												<td>
+													<select class="form-controls">
+													    <option value="Loan" >Loan</option>
+													    <option value="gen">General</option>
+													    <option value="null" selected>-</option>
+				  									</select>
+												</td>
+												<td>
+													<label for="branch">Branch:</label>
+												</td>
+												<td>
+													<select class="form-controls">
+													    <option value="cse" selected>Computer Science Engineering</option>
+													    <option value="ece" >Electronics & Communication Engineering</option>
+													    <option value="me" >Mechanical Engineering</option>
+														<option value="cce" >Electrical Engineering</option>
+														<option value="mte">Metallurgical and Materials Engineering</option>
+														<option value="che"  >Chemical Engineering</option>
+
+
+				  									</select>
+				  								</td>
+											</div>
+										</tr>
+										<tr>
+											<div class="form-group">
+												<td><label for="batch">Batch:  </label></td>
+												<td>
+													<select>
+														<option value="y14" >Y17</option>
+														<option value="y15" >Y18</option>
+														<option value="y16">Y19</option>
+														<option value="y17" selected>Y20</option>
+														<option value="y18" >Y21</option>
+													</select>
+												</td>
+												<td><label for="sem"> Semester: </label></td>
+												<td>
+													<select>
+														<option value="1" >I</option>
+														<option value="2" >II</option>
+														<option value="3" >III</option>
+														<option value="4"  selected>IV</option>
+														<option value="5" >V</option>
+														<option value="6" >VI</option>
+														<option value="7" >VII</option>
+														<option value="8" >VIII</option>
+														
+													</select>
+												</td>
+											</div>
+										</tr>
+										<tr>
+											<div class="form-group">
+												<td>Hosteler:</td>
+												<td>
+													<label class="radio-inline"><input type="radio" name="status" checked > Yes</label>
+													<label class="radio-inline"><input type="radio" name="status" > No</label>
+												</td>
+											</div>
+										</tr>
+									</table>
+								</form> 
+							</div>
+					</div>
+					</div>
+				</div>
+			</div>
+
+		<!----footer----->
+		<footer class="navbar fixed-bottom">
+  				<span class="navbar-brand">&copy Copyright 2020</span>
+  				<button id="scroll-top" onclick="toTop()" class="btn  btn-outline-light"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+		</footer>
+
+	</body>
+</html>

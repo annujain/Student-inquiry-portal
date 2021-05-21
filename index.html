@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Home</title>
+
+      <!--<link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">-->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+     <!-- <link rel="stylesheet" type="text/css" href="https://tympanus.net/codrops/adpacks/demoadpacks.css?1552006117672">-->
+      <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Permanent+Marker" rel="stylesheet">   
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+      
+      <script src="js/index.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <noscript> You need to enable Javascript to run this site. </noscript>
+    
+    <!--Navbar--------------------------------------------------------------------------------------------------------->
+      <nav class="navbar navbar-reverse fixed-top">
+          <a class="navbar-brand" href="https://www.mnit.ac.in">
+            <img src="images/Mnit_logo.png" alt="MNIT logo">  
+          </a>
+          <h1 style="margin-left:200px;">Malaviya National Institute of Technology</h1>
+            <div class ="dropdown ml-auto">
+              <button class="btn btn-lg btn-outline-light dropdown-toggle" data-toggle="dropdown" id="navbarDropdown">
+                Hi, User
+              </button>
+            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <li class="img1"><a class="dropdown-item" href="#"><img src="images/user.png"></a></li>
+              <li><a class="dropdown-item" href="index.html">Home</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+              <li><a class="dropdown-item" href="change-pswd.html">Change Password</a></li>            
+            </ul>
+            </div>
+      </nav>
+
+      <!--Main----------------------------------------------------------------------------------------------------------->
+    <main class="home-main">
+      
+      <div class="row">
+        <div class="col-md-1"></div>
+        <!-- Caurosel -------------------------------------------------->
+        <div class="carousel slide layout animated slideInLeft col-md-3" data-ride="carousel">
+          <div class="carousel-header"><h1>Latest News</h1></div>
+          <div class="carousel-inner">
+            <div class="carousel-item active"> 
+                <p>Online Feedback Activity will be done as per following schedule - * The web-link for course/faculty feedback for the current semester will be activated as per the following schedule: From Thursday, January 16, 2021, 12.00 noon to Sunday, January 19, 2021, 11.59 pm.</p>
+            </div>
+            <div class="carousel-item">
+              <p>Only the courses that you have enrolled for in this semester will be listed, matched with corresponding faculty name(s). If the list of courses is wrong or incomplete, contact admin (contact details as given below).</p>
+            </div>
+            <div class="carousel-item">
+              <p>Your identity (roll number/name) will be detached from your feedback responses. So, please fill your feedback fairly and responsibly.</p>
+            </div>
+            <div class="carousel-item">
+              <p>If your class was divided into sections, please fill the feedback ONLY for the faculty(s) who taught your section.</p>
+            </div>
+            <div class="carousel-item">
+              <p>For courses taught by more than one faculty, fill the feedback for EACH faculty.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="layout animated slideInRight col-md-6">
+          <center>
+            <div class="container-option">
+              <div class="col"><a href="stu-details.html"><button type="button" class="btn btn-dark">STUDENT DETAILS</button></a></div>
+              <div class="row" id="a1">
+                <div class="col"><a href="event.html"><button type="button" class="btn btn-dark">NEW EVENTS</button></a></div>
+                      <div class="col"><a href="library.html"><button type="button" class="btn btn-dark">BOOK ISSUE</button></a></div>
+              </div>
+              <div class="row" id="a2">
+                <div class="col"><a href="complaint.html"><button type="button" class="btn btn-dark">COMPLAINT</button></a></div>
+                      <div class="col"><a href="lt-booking.html"><button type="button" class="btn btn-dark">VLTC BOOKING</button></a></div>
+              </div>
+              <div class="col"><a href="courses.html"><button type="button" class="btn btn-dark">COURSES</button></a></div>
+            </div>
+          </center>
+        </div>
+      </div>
+    </main>
+
+    <!--Footer--------------------------------------------------------------------------------------------------------->
+    <footer class="footer navbar fixed-bottom">
+      <span class="navbar-brand">&copy Copyright 2020</span>
+      <button id="scroll-top" onclick="toTop()" class="btn  btn-outline-light"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+    </footer>
+
+  </body>
+</html>
